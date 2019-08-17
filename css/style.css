@@ -1,0 +1,210 @@
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+html,body{
+	font-family: lato,arial,san-serif;
+	background-color: #EEEEEE;
+	position: relative;
+
+}
+header{
+	background-color: #fff;
+	width:100%;
+	overflow: hidden;
+	box-shadow: 1px 2px 3px rgba(0,0,0,0.1),1px 2px 3px rgba(0,0,0,0.2);
+}
+
+nav{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+nav > ul{
+	float: right;
+	padding-right: 16px;
+}
+ul > li{
+	display: inline-block;
+}
+li > a{
+	display: block;
+	text-decoration: none;
+	color: #040F0F;
+	font-size: 1.2em;
+	padding: 16px;
+}
+li > a:hover,a:active{
+	background-color: rgba(0,0,0,0.1);
+}
+
+
+/* Main Content */
+main{
+	max-width: 100%;
+	/*background-color: #EEEEEE;*/
+	background-image: url('../img/bg-image-dentist.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 100px;
+}
+.box-container{
+	max-width: 1440px;
+	margin: 0 auto;
+	/*display: inline;*/
+	/*max-width: 100%;*/
+	/*background-color: #000;*/
+	overflow: hidden;
+	padding: 20px 0;
+}
+.box{
+	background-color: rgba(255,255,255,0.6);
+	/*padding: 20px;*/
+	word-wrap: break-word;
+	display: inline-block;
+	/*margin: 20px;*/
+	margin: 1.953125%;
+	max-width: 21.09375%;
+	/*max-height: 1000px;*/
+	float: left;
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.19), 0px 3px 6px rgba(0,0,0,0.23)
+}
+.box-content-container{
+	margin: 0 20px 20px 20px;
+	text-align: center;
+	overflow: hidden;
+
+}
+.box-image-container > img{
+	transition: box-shadow,transform .3s ease-in-out;
+	max-width: 100%;
+}
+.box-content-container > h2{
+	text-align: center;
+	justify-content: center;
+	line-height: 3;
+	color: #315659;
+}
+.box-content-container > p{
+	text-align: left;
+	color: #122C34;
+	font-size: 1.03em;
+	line-height: 1.5;
+	word-spacing: .2em;
+	
+}
+.box-content-container > a{
+	text-decoration: none;
+	color: #000;
+	/*background-color: #5E7CE2;*/
+	background-color: #EEEEEE;
+	padding: 8px 16px;
+	margin: 20px 0;
+	float: right;
+	border-radius: 500px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.19), 0px 1px 2px rgba(0,0,0,0.23);
+
+}
+.box-content-container > a:hover,a:active{
+	/*background-color: #5E7CE2;*/
+	background-color: rgba(0,0,0,0.1);
+/*	color: #fff;*/
+}
+.box-image-container:hover > img{
+	transform: scale(1.02);
+	cursor: pointer;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.19), 0px 2px 4px rgba(0,0,0,0.23)
+}
+
+.make-appointment-container{
+	opacity: 0.5;
+	transition: opacity 0.3s ease-in-out;
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	margin: 20px;
+	padding: 20px;
+	background-color: #EEEEEE;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.19), 0px 2px 4px rgba(0,0,0,0.23);
+	border-radius: 50%;
+}
+.make-appointment-container:hover{
+	opacity: 1;
+	background-color: coral;
+}
+
+.make-appointment-container:hover > a svg path{
+	fill: #fff;
+}
+
+.detail-main{
+	background-color:#5E7CE2; 
+	/*background-color: rgba(255,255,255,0.2);*/
+	box-shadow: 1px 3px 6px rgba(0,0,0,0.19),1px 2px 3px rgba(0,0,0,0.23);
+}
+.customer-reviews-container{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding:100px 40px 100px 40px; 
+	overflow: hidden;
+}
+
+.customer-reviews-container > .icon-container{
+	transition: transform .2s ease-in-out;
+	margin: 1.953125%;
+	max-width: 16.09375%;
+	float: left;
+}
+.icon-container > img{
+	max-width: 100%;
+}
+.icon-container > p{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 800;
+	color: #fff;
+}
+.customer-reviews-container > .icon-container:hover{
+	cursor:pointer;
+	transform: scale(1.04);
+}
+
+footer{
+	background-color: #000;
+	display: inherit;
+}
+footer p{
+	padding-top: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 800;
+}
+/* Media Queries */
+@Media(max-width: 1024px){
+	.box{
+		margin: 1.953125%;
+		max-width: 46.09375%;
+	}
+	.customer-reviews-container > .icon-container{
+		margin: 1.953125%;
+		max-width: 29.427083333333332%;
+	}
+}
+@Media(max-width: 768px){
+	.box{
+		margin: 2.604166666666667%;
+		max-width: 94.79166666666667%;
+	}
+	.customer-reviews-container > .icon-container{
+		margin: 1.953125%;
+		max-width: 46.09375%;
+	}
+	.icon-container > p{
+		font-size: 1.3em;
+	}
+	.make-appointment-container{
+		display: none;
+	}
+}
